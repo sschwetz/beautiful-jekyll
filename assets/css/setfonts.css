@@ -1,39 +1,39 @@
 @font-face {
     font-family: 'victor_mono';
-    src: url('/fonts/victormono-italic-variablefont_wght-webfont.woff2') format('woff2'),
-         url('/fonts/victormono-italic-variablefont_wght-webfont.woff') format('woff');
+    src: url('/assets/fonts/victormono-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/assets/fonts/victormono-italic-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'victor_mono';
-    src: url('/fonts/victormono-variablefont_wght-webfont.woff2') format('woff2'),
-         url('/fonts/victormono-variablefont_wght-webfont.woff') format('woff');
+    src: url('/assets/fonts/victormono-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/assets/fonts/victormono-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'nunito';
-    src: url('/fonts/nunito-italic-variablefont_wght-webfont.woff2') format('woff2'),
-         url('/fonts/nunito-italic-variablefont_wght-webfont.woff') format('woff');
+    src: url('/assets/fonts/nunito-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/assets/fonts/nunito-italic-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'nunito';
-    src: url('/fonts/nunito-variablefont_wght-webfont.woff2') format('woff2'),
-         url('/fonts/nunito-variablefont_wght-webfont.woff') format('woff');
+    src: url('/assets/fonts/nunito-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/assets/fonts/nunito-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'saira';
-    src: url('/fonts/saira-variablefont_wdthwght-webfont.woff2') format('woff2'),
-         url('/fonts/saira-variablefont_wdthwght-webfont.woff') format('woff');
+    src: url('/assets/fonts/saira-variablefont_wdthwght-webfont.woff2') format('woff2'),
+         url('/assets/fonts/saira-variablefont_wdthwght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
