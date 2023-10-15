@@ -38,6 +38,10 @@
     font-style: normal;
 }
 
+pre {
+  font-family: 'saira', monospace;
+}
+
 body {
   font-family: 'nunito', 'Times New Roman', serif;
 }
