@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'victor_mono';
+    src: url('/fonts/victormono-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/fonts/victormono-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'victor_mono';
+    src: url('/fonts/victormono-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/fonts/victormono-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunito';
+    src: url('/fonts/nunito-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/fonts/nunito-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'nunito';
+    src: url('/fonts/nunito-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/fonts/nunito-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'saira';
+    src: url('/fonts/saira-variablefont_wdthwght-webfont.woff2') format('woff2'),
+         url('/fonts/saira-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'nunito', 'Times New Roman', serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'saira', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navbar-custom { 
+  font-family: 'saira', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+footer .copyright {
+  font-family: 'saira', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.post-preview a {
+  font-family: 'saira', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.post-preview .post-meta,
+.post-heading .post-meta {
+  font-family: 'saira', 'Times New Roman', serif;
+}
+
+.blog-tags {
+  font-family: 'saira', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#full-tags-list {
+  font-family: 'saira', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.intro-header .page-heading .page-subheading,
+.intro-header .post-heading .post-subheading {
+  font-family: 'saira', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.intro-header.big-img .img-desc {
+  font-family: 'saira', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.pagination .page-item .page-link {
+  font-family: 'saira', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
