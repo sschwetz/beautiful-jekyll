@@ -72,7 +72,6 @@ social-network-links:
 #  telegram: yourname
 #  calendly: yourname
 #  mastodon: instance.url/@username
-#  bluesky: yourname
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
 #  discord: "invite_code" or "users/userid" or "invite/invite_code" 
@@ -260,6 +259,9 @@ paginate: 5
 
 kramdown:
   input: GFM
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
@@ -275,7 +277,7 @@ defaults:
     scope:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
-      layout: "page"
+      layout: "page" 
 
 # Exclude these files from production site
 exclude:
@@ -289,7 +291,8 @@ exclude:
   - docs/
 
 plugins:
-  - jekyll-paginate
+#  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
 
 # Beautiful Jekyll / Dean Attali
