@@ -1,13 +1,7 @@
 @font-face {
-    font-family: 'interregular';
-    src: url('inter-variablefont_slntwght-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'victor_mono';
     src: url('/assets/fonts/victormono-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/assets/fonts/victormono-italic-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
@@ -15,30 +9,41 @@
 @font-face {
     font-family: 'victor_mono';
     src: url('/assets/fonts/victormono-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/assets/fonts/victormono-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'saira';
-    src: url('/assets/fonts/saira-italic-variablefont_wdthwght') format('woff2'),
+    font-family: 'nunito';
+    src: url('/assets/fonts/nunito-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/assets/fonts/nunito-italic-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'saira';
-    src: url('/assets/fonts/saira-variablefont_wdthwght-webfont.woff2') format('woff2'),
+    font-family: 'nunito';
+    src: url('/assets/fonts/nunito-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/assets/fonts/nunito-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-code,pre {
-  font-family: 'victor_mono', monospace;
+@font-face {
+    font-family: 'saira';
+    src: url('/assets/fonts/saira-variablefont_wdthwght-webfont.woff2') format('woff2'),
+         url('/assets/fonts/saira-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-body,p {
-  font-family: 'nunito_sans', 'Times New Roman', serif;
+pre {
+  font-family: 'saira', monospace;
+}
+
+body {
+  font-family: 'nunito', 'Times New Roman', serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -59,7 +64,7 @@ footer .copyright {
 
 .post-preview .post-meta,
 .post-heading .post-meta {
-  font-family: 'saira', Helvetica Neue', Helvetica, Arial sans-serif;
+  font-family: 'saira', 'Times New Roman', serif;
 }
 
 .blog-tags {
