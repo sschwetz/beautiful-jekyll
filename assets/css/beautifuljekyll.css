@@ -748,8 +748,11 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   padding: 1.25rem 0;
   box-shadow: 0 0 0.3125rem #AAA;
 }
-
-@media {
+/* Many phones are 320 or 360px, so make sure images are a proper aspect ratio in those cases */
+.header-section.has-img .intro-header.no-img {
+  display: none;
+}
+@media (max-width: 365px) {
   .header-section.has-img .intro-header.no-img {
     display: block;
   }
@@ -763,6 +766,11 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   }
   .header-section.has-img .big-img {
     margin-bottom: 0;
+  }
+}
+@media (max-width: 325px) {
+  .intro-header.big-img {
+    height: 12.5rem;
   }
 }
 
