@@ -757,9 +757,17 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
     width: 100%;
     height: 13.75rem;
   }
-
+  .intro-header.big-img .page-heading,
+  .intro-header.big-img .post-heading {
+    display: none;
+  }
   .header-section.has-img .big-img {
     margin-bottom: 0;
+  }
+}
+@media (max-width: 325px) {
+  .intro-header.big-img {
+    height: 12.5rem;
   }
 }
 
