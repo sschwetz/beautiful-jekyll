@@ -1,2 +1,3 @@
-enabled: true
-revision: 3
+config:
+  enabled: true
+  revision: 3
