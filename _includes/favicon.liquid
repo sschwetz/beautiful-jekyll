@@ -8,7 +8,7 @@
     {% comment %} convert the revision number to a string this will return 0 if invalid {% endcomment %}
     {% assign revision = data.favicon.revision | to_i }}
   {% else %} {% assign revision = data.favicon.revision %}
+  {% endif %}
 {% endif %}
-
 {% comment %} if the string to int conversion fails or data.favicon.revision is not set set the revision to 1 {% endcomment %}
 {% if revision < 1 %} {% assign revision = 1 %} {% endif %}
