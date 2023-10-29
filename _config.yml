@@ -72,7 +72,6 @@ social-network-links:
 #  telegram: yourname
 #  calendly: yourname
 #  mastodon: instance.url/@username
-#  bluesky: yourname
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
 #  discord: "invite_code" or "users/userid" or "invite/invite_code" 
@@ -121,6 +120,13 @@ navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
 #keywords: "my,list,of,keywords"
+
+# Enable the favicon for your website. This is the icon that appears on the tab of the web browser
+# To setup your favicon go to https://realfavicongenerator.net and follow the instructions, download the favions 
+# and place them into /assets/favicon.
+# if you change the favicon images, you must increment the revision to force sites to update.
+
+site.favicon-revision = 1
 
 ######################################
 # --- Colours / background image --- #
@@ -260,6 +266,9 @@ paginate: 5
 
 kramdown:
   input: GFM
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
@@ -275,7 +284,7 @@ defaults:
     scope:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
-      layout: "page"
+      layout: "page" 
 
 # Exclude these files from production site
 exclude:
@@ -289,8 +298,19 @@ exclude:
   - docs/
 
 plugins:
-  - jekyll-paginate
+#  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
+
+compress_html:
+  clippings: all
+  comments: [""]
+  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
