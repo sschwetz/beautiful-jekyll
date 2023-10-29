@@ -11,4 +11,4 @@
 {% endunless %}
 
 {% comment %} if the string to int conversion fails or data.favicon.revision is not set set the revision to 1 {% endcoment %}
-{% if revision < 1 %} {% assign revision = 1 %}
+{% if revision < 1 %} {% assign revision = 1 %} {% endif %}
