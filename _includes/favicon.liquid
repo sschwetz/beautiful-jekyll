@@ -1,14 +1,14 @@
-{% # if set get the revision number from the config %}
+{% comment %} if set get the revision number from the config {% endcomment %}
 {% assign revision = 0 %}
 {%- if data.favicon.revision -%}
-  {% # dodgy test to allow to confirm if data.favicon.revision is an integer %}
+  {% comment %} dodgy test to allow to confirm if data.favicon.revision is an integer {% endcomment %}
   {% capture test_var %}{{ data.favicon.revision | json }}{% endcapture %} 
-  {% # if the variable is empty it is a string so we need to convert it to an integer %}
+  {% comment %} if the variable is empty it is a string so we need to convert it to an integer {% endcomment %}
   {%- if test_var == "" -%}
-    {% # convert the revision number to a string this will return 0 if invalid %}
+    {% comment %} convert the revision number to a string this will return 0 if invalid {% endcoment %}
     {% assign revision = data.favicon.revision | to_i }}
   {% else %} {% assign revision data.favicon.revision %}
 {% endunless %}
 
-{% # if the string to int conversion fails or data.favicon.revisi on is not set set the revision to 1 %}
+{% comment %} if the string to int conversion fails or data.favicon.revision is not set set the revision to 1 {% endcoment %}
 {% if revision < 1 %} {% assign revision = 1 %}
