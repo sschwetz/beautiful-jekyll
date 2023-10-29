@@ -1,8 +1,0 @@
-{% comment %} if set get the revision number from the config {% endcomment %}
-{% assign revision = 0 %}
-
-{% comment %} dodgy test to allow to confirm if data.favicon.revision is an integer {% endcomment %}=
-{% comment %} convert the revision number to a string this will return 0 if invalid {% endcomment %}
-
-{% capture revision %} {{ site.favicon-revision | to_i }} {% endcapture %}
-{%- if revision < 1 } {% assign revision = 1 %} {% endif %}
