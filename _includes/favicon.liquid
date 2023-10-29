@@ -5,10 +5,10 @@
   {% capture test_var %}{{ data.favicon.revision | json }}{% endcapture %} 
   {% comment %} if the variable is empty it is a string so we need to convert it to an integer {% endcomment %}
   {%- if test_var == "" -%}
-    {% comment %} convert the revision number to a string this will return 0 if invalid {% endcoment %}
+    {% comment %} convert the revision number to a string this will return 0 if invalid {% endcomment %}
     {% assign revision = data.favicon.revision | to_i }}
   {% else %} {% assign revision = data.favicon.revision %}
 {% endif %}
 
-{% comment %} if the string to int conversion fails or data.favicon.revision is not set set the revision to 1 {% endcoment %}
+{% comment %} if the string to int conversion fails or data.favicon.revision is not set set the revision to 1 {% endcomment %}
 {% if revision < 1 %} {% assign revision = 1 %} {% endif %}
