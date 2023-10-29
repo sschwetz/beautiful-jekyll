@@ -7,6 +7,6 @@
   {%- if test_var == "" -%}
     {% comment %} convert the revision number to a string this will return 0 if invalid {% endcomment %}
     {% capture revision %} {{ data.favicon.revision | to_i }} {% endcapture %}
-  {% else %} {% assign revision = data.favicon.revision %}
+  {% else %} {% capture revision %} {{ data.favicon.revision }} {% endcapture %}
   {% endif %}
 {% endif %}
