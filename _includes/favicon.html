@@ -1,0 +1,33 @@
+---
+comment: this page needs front matter so jekyll will process the liquid
+---
+
+{%- if site.title -%}
+  <meta name="apple-mobile-web-app-title" content="{{ site.title | strip_html}}">
+  <meta name="application-name" content="{{ site.title | strip_html }}">
+{% endif %}
+
+{% comment %} if set get the revision number from the config {% endcomment %}
+{% assign revision = 0 %}
+{%- if data.favicon.revision -%}
+  {% capture test_var %}{{ data.favicon.revision | json }}{% endcapture %}
+  
+  {% comment %} if the variable is empty it is a string so we need to convert it to an integer {% endcomment %}
+  {%- if test_var = "" -%}
+    {% comment %} convert the revision number to a string this will return 0 if invalid {% endcoment %}
+    {% assign revision = data.favicon.revision | to_i }}
+  {% else %} {% assign revision data.favicon.revision %}
+{% endif %}
+
+{% comment %} if the string to int conversion fails or data.favicon.revision is not set set the revision to 1 {% endcoment %}
+{% if revision == 0 %} {% assign revision = 1 %}
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favkcon/apple-touch-icon.png?version={{ revision }}">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png?version={{ revision }}">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png?version={{ revision }}">
+<link rel="manifest" href="/assets/favicon/site.webmanifest?version={{ revision }}">
+<link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg?version={{ revision }}" color="#5bbad5"> 
+<link rel="shortcut icon" href="/assets/favicon/favicon.ico?version={{ revision }}">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-config" content="/assets/favicon/browserconfig.xml?version={{ revision }}">
+<meta name="theme-color" content="#ffffff">
