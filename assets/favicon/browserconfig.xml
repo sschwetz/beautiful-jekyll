@@ -1,5 +1,5 @@
 ---
-comment: we need frontmatter to make jekyll parse this
+layout: none
 ---
 
 
