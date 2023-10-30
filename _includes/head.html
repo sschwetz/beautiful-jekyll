@@ -25,9 +25,6 @@
 
   <title>{{ title }}</title>
 
-  {% if site.favicon-revision %}
-    {% include favicon.html %}
-  {% endif %}
 
   {% capture author %}
     {%- if page.author -%}
@@ -58,7 +55,11 @@
   {% include gtm_head.html %}
   {% include google_analytics.html %}
   {% include cloudflare_analytics.html %}
-
+  
+  {% if site.favicon-revision %}
+    {% include favicon.html %}
+  {% endif %}
+  
   {% if layout.common-ext-css %}
     {% for css in layout.common-ext-css %}
       {% include ext-css.html css=css %}
