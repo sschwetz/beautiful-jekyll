@@ -53,7 +53,8 @@ layout: base
       {% endif %}
 
       {% unless page.related-posts == false %}
-      {% include related-posts %}
+        {% include related-posts %}
+      {% endunless %}
       
       {% if page.after-content %}
         <div class="after-content">
